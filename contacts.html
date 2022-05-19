@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Контакты</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220519221742">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="https://nst1.gismeteo.ru/assets/flat-ui/legacy/css/informer.min.css?_v=20220519221742">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<script src="https://www.gismeteo.ru/api/informer/getinformer/?hash=AHlaWr6c0n4IkF&_v=20220519221742"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=cb9bcd0d-2e9b-4ba6-ad62-2cbc878322e4&lang=ru_RU&_v=20220519221742">
+	</script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no, maximum-scale=1" />
+</head>
+
+<body>
+	<div class="wrapper">
+		<header data-scroll="138" data-scroll-show class="header _header-scroll _header-show" id="header">
+			<div class="header__container">
+				<div class="header__menu menu">
+					<img src="img/logotip.png" alt="" class="menu__burger-img">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="../index.html" class="menu__link">ГЛАВНАЯ</a></li>
+							<li class="menu__item"><a href="" class="menu__link">ВЕЛОСТАНЦИИ</a></li>
+							<li class="menu__item"><a href="" class="menu__link">ТАРИФЫ</a></li>
+							<li class="menu__logotip"><a href="../index.html" class="menu__logo"><img src="img/logotip.png" alt="" class="menu__logo-img"></a></li>
+							<li class="menu__item"><a href="../contacts.html" class="menu__link">КОНТАКТЫ</a></li>
+							<li class="menu__item"><a href="../faq.html" class="menu__link">FAQ</a></li>
+							<li class="menu__item"><a href="index.html#news" class="menu__link">НОВОСТИ</a>
+							</li>
+						</ul>
+						<ul class="menu__list-bottom">
+							<li class="menu__item-bottom menu__button left"><a href="" class="menu__link-bottom" data-popup="#popup">Вход</a><a href="" class="_icon-log" data-popup="#popup"></a></li>
+							<li class="menu__item-bottom right animation ">
+								<p class="menu__link-bottom menu__link-bottom-burger">RU</p>
+								<p class="menu__link-bottom menu__link-bottom-burger hidden">EN</p>
+								<p class="menu__link-bottom menu__link-bottom-burger hidden ">KZ</p>
+								<p class="menu__link-arrow menu__link-arrow-mobile _icon-arrows"></p></a>
+
+							</li>
+						</ul>
+
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="contacts">
+				<h2 class="contacts__tilte">Контакты</h2>
+				<div class="contacts__container">
+					<div class="contacts__block-first first">
+						<p class="first__watermark">Almaty</p>
+						<p class="first__title">СЛУЖБА ПОДДЕРЖКИ:</p>
+						<p class="first__number">+7 702 000 80 60</p>
+						<p class="first__subtitle">ОТДЕЛ ПРОДАЖ:</p>
+						<div class="first__text">
+							<p class="first__subtext">Ледовая арена «Олимпик»
+								пр. Абая, 44/1, 2 этаж
+								(вход со стороны ул. Байтурсынова)<br>
+								График работы: Понедельник - Суббота 10:00 - 19:00.
+								Перерыв: 14:00 - 15:00
+								Воскресенье выходной
+
+							</p>
+						</div>
+						<div class="first__map">
+							<div style="position:relative;overflow:hidden;"><a href="https://yandex.kz/maps/162/almaty/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Алматы</a><a href="https://yandex.kz/maps/162/almaty/?feedback=organization%2Fedit&feedback-context=organization.footer&ll=76.934658%2C43.240122&oid=80521847665&ol=biz&panorama%5Bdirection%5D=234.214455%2C1.406594&panorama%5Bfull%5D=true&panorama%5Bid%5D=1532632676_788702556_23_1402665752&panorama%5Bpoint%5D=76.927574%2C43.239568&panorama%5Bspan%5D=97.391368%2C60.000000&tilt=0.8726646259971648&utm_medium=mapframe&utm_source=maps&z=14.85" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс Карты</a><iframe src="https://yandex.kz/map-widget/v1/-/CCUFu2q90D" frameborder="1" class="first__map" allowfullscreen="true" style="position:relative;"></iframe></div>
+
+							<img src="img/contact__map.png" alt="" class="first__map-img">
+						</div>
+					</div>
+					<div class="contacts__block-second second">
+						<p class="second__watermark">Bike</p>
+						<p class="second__title">УВАЖАЕМЫЕ ПОЛЬЗОВАТЕЛИ!</p>
+						<p class="second__text">Если вы не нашли ответ на свой вопрос - задайте его нам.</p>
+						<form id="form" data-ajax class="second__form" method="POST" action="../src/sendmail.php">
+							<div class="form__item">
+								<input id="formName" type="text" name="name" class="form__input" data-validate required>
+								<label for="formName" class="form__label">Имя*:</label>
+							</div>
+							<div class="form__item">
+								<input id="formEmail" type="text" name="email" class="form__input" data-required="email" required data-validate data-error="Введен не верный E-mail">
+								<label for="formEmail" class="form__label" data-validate>Email*:</label>
+							</div>
+
+							<div class="form__item">
+								<input data-tel-input type="text" class="form__input " name="phone" required>
+								<label for="formNumber" class="form__label">Номер
+									телефона:</label>
+
+							</div>
+
+							<select name="select" id="" class="select ">
+								<option value="" onchange="" selected>Выберите тип сообщения...
+								</option>
+								<option value="1">Проблемы с велосипедом</option>
+								<option value="2">Проблемы со станцией</option>
+								<option value="3">Проблемы с сайтом</option>
+								<option value="4">Не пришло SMS/Push сообщение</option>
+								<option value="5">Предложение</option>
+								<option value="6">Другие вопросы</option>
+
+							</select>
+
+							<div class="form__item">
+								<textarea name="message" id="formMessage" class="form__input" data-validate></textarea>
+								<label for="formMessage" class="form__label" data-validate>Сообщение:</label>
+
+							</div>
+							<button type="submit" class="form__button">Отправить</button>
+						</form>
+
+					</div>
+				</div>
+
+			</section>
+
+
+		</main>
+
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__info">
+					<div class="footer__info-number number">
+						<h2 class="number__title">СЛУЖБА ПОДДЕРЖКИ</h2>
+						<p class="number__subtitle">+7 702 000 80 60</p>
+						<a href="" class="number__link">Годовой отчет</a>
+						<a href="" class="number__link">Обратная связь</a>
+						<a href="" class="number__image"><img src="img/googleplay.svg" alt="" class="number__subimage"></a>
+						<a href="" class="number__image"><img src="img/app.svg" alt="" class="number__subimage"></a>
+
+					</div>
+					<div class="footer__info-social social">
+						<a href="" class="social__img"><img src="img/logotip__footer.svg" alt="" class="social__subimg"></a>
+						<div class="social__social">
+							<a href="" class="social__social-text _icon-Instagram">
+							</a>
+							<a href="" class="social__social-text _icon-Telegram">
+							</a>
+							<a href="" class="social__social-text _icon-WhatsApp">
+							</a>
+							<a href="" class="social__social-text _icon-TikTok">
+							</a>
+						</div>
+					</div>
+					<div class="footer__info-store store">
+						<h2 class="store__title">ОТДЕЛ ПРОДАЖ</h2>
+						<p class="store__text">пр. Абая, 44/1, Ледовая арена «Олимпик», 2 этаж (вход со стороны
+							ул.Байтурсынова)<br>
+							Понедельник - Суббота 10:00- 19:00.<br>
+							Перерыв: 14:00-15:00.
+						</p>
+						<span class="store__direction"> AlmatyBike 2016 - 2022 </span>
+					</div>
+				</div>
+				<div class="footer__mobile">
+					<a href="" class="social__img"><img src="img/logotip__footer.svg" alt="" class="social__subimg"></a>
+					<h2 class="number__title">СЛУЖБА ПОДДЕРЖКИ</h2>
+					<p class="number__subtitle">+7 702 000 80 60</p>
+					<a href="" class="number__link">Годовой отчет</a>
+					<a href="" class="number__link">Обратная связь</a>
+					<div class="number__button">
+						<a href="" class="number__image"><img src="img/googleplay.svg" alt="" class="number__subimage"></a>
+						<a href="https://apps.apple.com/kz/app/almatybike-app/id1605738869" class="number__image"><img src="img/app.svg" alt="" class="number__subimage"></a>
+					</div>
+					<div class="social__social">
+						<a href="" class="social__social-text _icon-Instagram">
+						</a>
+						<a href="" class="social__social-text _icon-Telegram">
+						</a>
+						<a href="" class="social__social-text _icon-WhatsApp">
+						</a>
+						<a href="" class="social__social-text _icon-TikTok">
+						</a>
+					</div>
+					<span class="store__direction"> AlmatyBike 2016 - 2022 </span>
+				</div>
+
+			</div>
+		</footer>
+	</div>
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="popup__info">
+					<img src="img/logotip__footer.svg" alt="logo" class="popup__info-logo">
+					<p class="popup__info-text">Для входа воспользуйтесь мобильным приложением:</p>
+					<img src="img/qr.svg" alt="qr-code" class="popup__info-qr">
+					<div class="popup__info-store">
+						<a target="_blank" href="https://play.google.com/store/apps/details?id=com.almabipusher"><img src="img/googleplay.svg" alt="" class="popup__info-store-play"></a>
+						<a target="_blank" href="https://apps.apple.com/kz/app/almatybike-app/id1605738869"><img src="img/app.svg" alt="" class="popup__info-store-app"></a>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20220519221742"></script>
+
+</body>
+
+</html>
